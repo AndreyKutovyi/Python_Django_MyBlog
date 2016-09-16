@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+{{ news.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ news.title }}</h1>
+    <pre>{{ news.text }}</pre>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+{{ subject.title }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ subject.title }}</h1>
+
+   {% for article in articles %}
+
+        <h4><a href="{% url 'article' article.id%}">{{article.title }}</a></h4>
+        <pre class="hover_post">{{ article.get_short_text}}</pre>
+
+    {% empty %}
+    <p>No posts</p>
+    {% endfor %}
+
+
+{% endblock %}

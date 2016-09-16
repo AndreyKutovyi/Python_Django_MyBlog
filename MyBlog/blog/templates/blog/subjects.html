@@ -1,0 +1,137 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+Subjects
+{% endblock %}
+
+{% block content %}
+
+    <p>1 курс</p>
+
+    {% for subject in subjects %}
+        {% if subject.course == 1 %}
+
+          <a href="{% url 'subject' subject.id%}">
+         <div class="post_subject">
+               <p id="name_of_subject">{{ subject.title}}</p>
+                <p>Викладач:</p>
+                    {% for teacher in teachers %}
+                        {% if teacher.subjects.pk == subject.pk %}
+                            <p style="color: black">{{ teacher.surname }} {{ teacher.name }} {{ teacher.midle_name }}</p>
+                        {% endif %}
+                    {% endfor %}
+          </div>
+            </a>
+        {% endif %}
+
+    {% endfor %}
+
+
+<div id="line"></div>
+
+    <p>2 курс</p>
+    {% for subject in subjects %}
+        {% if subject.course == 2 %}
+          <a href="{% url 'subject' subject.id%}">
+            <div class="post_subject">
+                <p id="name_of_subject">{{ subject.title}}</p>
+                <p>Викладач:</p>
+                    {% for teacher in teachers %}
+                        {% if teacher.subjects.pk == subject.pk %}
+                            <p style="color: black">{{ teacher.surname }} {{ teacher.name }} {{ teacher.midle_name }}</p>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+            </a>
+        {% endif %}
+         {% empty %}
+        <p>No subjects!</p>
+    {% endfor %}
+
+<div id="line"></div>
+
+    <p>3 курс</p>
+    {% for subject in subjects %}
+        {% if subject.course == 3 %}
+            <a href="{% url 'subject' subject.id%}">
+            <div class="post_subject">
+                <p id="name_of_subject">{{ subject.title}}</p>
+                <p>Викладач:</p>
+                    {% for teacher in teachers %}
+                        {% if teacher.subjects.pk == subject.pk %}
+                            <p style="color: black">{{ teacher.surname }} {{ teacher.name }} {{ teacher.midle_name }}</p>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+            </a>
+        {% endif %}
+
+         {% empty %}
+        <p>No subjects!</p>
+    {% endfor %}
+
+<div id="line"></div>
+
+    <p>4 курс</p>
+
+    {% for subject in subjects %}
+        {% if subject.course == 4 %}
+         <a href="{% url 'subject' subject.id%}">
+            <div class="post_subject">
+                <p id="name_of_subject">{{ subject.title}}</p>
+                <p>Викладач:</p>
+                    {% for teacher in teachers %}
+                        {% if teacher.subjects.pk == subject.pk %}
+                            <p style="color: black">{{ teacher.surname }} {{ teacher.name }} {{ teacher.midle_name }}</p>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+            </a>
+        {% endif %}
+         {% empty %}
+        <p>No subjects!</p>
+    {% endfor %}
+
+<div id="line"></div>
+
+    <p>5 курс</p>
+    {% for subject in subjects %}
+        {% if subject.course == 5 %}
+          <a href="{% url 'subject' subject.id%}">
+            <div class="post_subject">
+                <p id="name_of_subject">{{ subject.title}}</p>
+                <p>Викладач:</p>
+                    {% for teacher in teachers %}
+                        {% if teacher.subjects.pk == subject.pk %}
+                            <p style="color: black">{{ teacher.surname }} {{ teacher.name }} {{ teacher.midle_name }}</p>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+            </a>
+        {% endif %}
+         {% empty %}
+        <p>No subjects!</p>
+    {% endfor %}
+
+<div id="line"></div>
+
+    <p>6 курс</p>
+    {% for subject in subjects %}
+        {% if subject.course == 6 %}
+          <a href="{% url 'subject' subject.id%}">
+            <div class="post_subject">
+                <div id="head_of_subject"> {{ subject.title}}</div>
+                <p>Викладач:</p>
+                    {% for teacher in teachers %}
+                        {% if teacher.subjects.pk == subject.pk %}
+                            <p style="color: black">{{ teacher.surname }} {{ teacher.name }} {{ teacher.midle_name }}</p>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+            </a>
+        {% endif %}
+         {% empty %}
+        <p>No subjects!</p>
+    {% endfor %}
+
+{% endblock %}

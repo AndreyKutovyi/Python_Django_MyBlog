@@ -1,0 +1,34 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Timetable
+{% endblock %}
+
+{% block content %}
+    <h1>Timetable</h1>
+
+ <table border="3" >
+   <caption>Розклад викладача: 1 тиждень: </caption>
+
+   <tr><th></th><th> ПОНЕДІЛОК </th><th> ВІВТОРОК </th><th> СЕРЕДА </th><th> ЧЕТВЕР </th><th> П'ЯТНИЦЯ </th></tr>
+   <tr><th>1 ПАРА </th><td>СП-125: 5.115</td><td>КС-421: 5.217</td><td>СП-125: 5.115</td><td>-</td><td>КС-421: 5.217</td></tr>
+   <tr><th>2 ПАРА </th><td>СП-125: 5.115</td><td>-</td><td>СП-125: 5.115</td><td>-</td><td>СП-125: 5.115</td></tr>
+   <tr><th>3 ПАРА </th><td>-</td><td>-</td><td>СП-125: 5.115</td><td>-</td><td>СП-125: 5.115</td></tr>
+   <tr><th>4 ПАРА </th><td>СП-125: 5.115</td><td>КС-421: 5.217</td><td>КС-421: 5.217</td><td>СП-125: 5.115</td><td>-</td></tr>
+   <tr><th>5 ПАРА </th><td>СП-125: 5.115</td><td>КС-421: 5.217</td><td>СП-125: 5.115</td><td>СП-125: 5.115</td><td>-</td></tr>
+
+  </table>
+
+    <table border="3" >
+   <caption>Розклад викладача: 2 тиждень:</caption>
+
+   <tr><th></th><th> ПОНЕДІЛОК </th><th> ВІВТОРОК </th><th> СЕРЕДА </th><th> ЧЕТВЕР </th><th> П'ЯТНИЦЯ </th></tr>
+   <tr><th>1 ПАРА </th><td>-</td><td>КС-421: 5.217</td><td>СП-125: 5.115</td><td>-</td><td>КС-421: 5.217</td></tr>
+   <tr><th>2 ПАРА </th><td>-</td><td>СП-125: 5.115</td><td>СП-325: 5.115</td><td>-</td><td>СП-125: 5.115</td></tr>
+   <tr><th>3 ПАРА </th><td>-</td><td>-</td><td>-</td><td>-</td><td>СП-125: 5.115</td></tr>
+   <tr><th>4 ПАРА </th><td>СП-125: 5.115</td><td>СП-425: 5.115</td><td>КС-421: 5.217</td><td>-</td><td>-</td></tr>
+   <tr><th>5 ПАРА </th><td>СП-125: 5.115</td><td>КС-421: 5.217</td><td>СП-125: 5.115</td><td>СП-125: 5.115</td><td>-</td></tr>
+
+  </table>
+
+{% endblock %}

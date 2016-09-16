@@ -1,0 +1,99 @@
+body{
+    background-color: #f1f1f1;
+    background-image: url("../blog/1.jpg");
+}
+
+pre{
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.3) ;
+}
+
+.post{
+    display: block;
+    padding: 10px;
+    margin: 0 0 10.5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.3) ;
+}
+
+.post_subject{
+    display: inline-block;
+    max-width:50%;
+    padding: 10px;
+    margin: 5px 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    border-radius: 4px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.3) ;
+}
+
+
+
+.post_subject:active{
+    background-color: #fafafa;
+    box-shadow: 0 0 5px 0.2px rgba(0, 0, 0, 0.3) ;
+}
+
+#head_of_subject{
+
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color:#07092f;
+}
+
+#line {
+    text-align: center; /* Выравниваем текст по центру */
+    border-bottom: 1px ; /* Параметры линии  */
+    border-bottom-color: #d4d4d4;
+    border-bottom-style: solid;
+    height: 18px; /* Высота блока */
+}
+
+.profile_3 img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: solid 3px #fff;
+    box-shadow: 0 0 3px 2px #ccc;
+}
+
+
+.main-content{
+    margin-top: 80px;
+}
+
+h4{
+    margin-top: 50px;
+
+}
+
+td {
+    text-align: center;
+    height: 40px;
+     padding: 15px;
+}
+
+tr {
+    text-align: center;
+    height: 40px;
+     padding: 15px;
+}
+
+.courses li {
+    width: 40%;
+
+}

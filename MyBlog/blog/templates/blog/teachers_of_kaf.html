@@ -1,0 +1,30 @@
+﻿{% extends 'blog/base.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block content %}
+    <h1>Викладачі</h1>
+
+    {% for teacher in  teachers %}
+
+        <div class="post">
+            <p style="font-weight: bold">{{ teacher.surname}} {{ teacher.name }} {{ teacher.midle_name }}</p>
+            <p>E-mail: <a HREF="mailto:{{ teacher.e_mail }}">{{ teacher.e_mail }}</a></p>
+             {% for subject in subjects %}
+                    {% if subject.pk  == teacher.subjects.pk %}
+                        <p><a href="{% url 'subject' subject.id%}">{{ teacher.subjects }}</a></p>
+                    {% endif %}
+                {% endfor %}
+
+        <div class="profile_3">
+           <p>{{ teacher.image }}</p>
+            <img src=" {{ teacher.image }}" alt="profile">
+{#        <img src="http://www.sheffield.com/wp-content/uploads/2013/06/placeholder.png" alt="profile" />#}
+        </div>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}
